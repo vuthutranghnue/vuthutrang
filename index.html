@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vũ Thu Trang · Giáo dục Tiểu học</title>
+<meta name="description" content="Vũ Thu Trang – sinh viên Giáo dục Tiểu học (Sư phạm Tiếng Anh), Trường Đại học Sư phạm Hà Nội. Hồ sơ giảng dạy, nghiên cứu và thành tích.">
+<meta property="og:title" content="Vũ Thu Trang · Teaching Portfolio">
+<meta property="og:description" content="Sinh viên Giáo dục Tiểu học – ĐH Sư phạm Hà Nội · CPA 3.87/4 · TOEIC 885">
+<meta property="og:image" content="assets/img/faculty.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b2a5b'/><text x='32' y='43' font-family='Georgia' font-size='30' fill='white' text-anchor='middle'>VT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b2a5b; --navy-2:#163d7a; --ink:#1b2433; --muted:#5b6678;
+  --sky:#e8f0fa; --sky-2:#d3e2f4; --paper:#fbfcfe; --line:#dbe3ee;
+  --gold:#d9a441; --card:#ffffff; --shadow:0 10px 30px rgba(11,42,91,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Be Vietnam Pro",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:16px;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;color:var(--navy);line-height:1.2}
+.eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--navy-2);font-weight:600}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(251,252,254,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font-family:"Playfair Display",serif;font-weight:700;color:var(--navy);text-decoration:none;font-size:1.15rem;white-space:nowrap}
+.logo span{color:var(--gold)}
+.menu{display:flex;gap:22px;list-style:none;font-size:.92rem}
+.menu a{text-decoration:none;color:var(--muted);transition:color .2s}
+.menu a:hover{color:var(--navy)}
+.nav-cta{display:flex;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.92rem;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s;border:1.5px solid var(--navy);white-space:nowrap}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-primary{background:var(--navy);color:#fff}
+.btn-ghost{color:var(--navy);background:transparent}
+.btn-sm{padding:8px 16px;font-size:.85rem}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(160deg,var(--sky) 0%,#f6f9fd 55%,#fff 100%);overflow:hidden}
+.hero::before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(22,61,122,.12),transparent 70%);right:-160px;top:-160px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding-top:72px;padding-bottom:88px;position:relative}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem);margin:14px 0 8px;letter-spacing:-.01em}
+.hero .role{font-size:1.15rem;color:var(--navy-2);font-weight:500;margin-bottom:20px}
+.hero p.lead{color:var(--muted);max-width:560px;margin-bottom:28px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.portrait{position:relative;justify-self:center;width:100%;max-width:380px}
+.portrait .frame{border-radius:200px 200px 24px 24px;overflow:hidden;box-shadow:0 30px 60px rgba(11,42,91,.22);aspect-ratio:3/4;background:var(--sky-2)}
+.portrait .frame img{width:100%;height:100%;object-fit:cover}
+.portrait .badge{position:absolute;left:-28px;bottom:36px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center}
+.portrait .badge b{font-family:"Playfair Display",serif;font-size:1.6rem;color:var(--navy)}
+.portrait .badge small{display:block;color:var(--muted);font-size:.78rem;line-height:1.3}
+.portrait .badge2{left:auto;right:-20px;top:40px;bottom:auto}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--navy);color:#fff;border-radius:22px;margin-top:-44px;position:relative;z-index:2;box-shadow:0 20px 40px rgba(11,42,91,.25)}
+.stat{padding:26px 22px;text-align:center;border-right:1px solid rgba(255,255,255,.12)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:"Playfair Display",serif;font-size:2rem;color:#fff}
+.stat span{font-size:.85rem;color:#c5d4ea}
+
+section{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:44px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(2rem,4vw,2.8rem);margin-top:8px}
+.sec-head p{color:var(--muted);max-width:460px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.about-img{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5}
+.about-img img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.about-text p{color:#3b4555;margin-bottom:16px}
+.quote{margin-top:28px;padding:26px 28px;background:var(--sky);border-left:4px solid var(--gold);border-radius:0 16px 16px 0}
+.quote p{font-family:"Playfair Display",serif;font-style:italic;font-size:1.25rem;color:var(--navy);margin:0}
+.quote cite{display:block;margin-top:8px;font-style:normal;color:var(--muted);font-size:.9rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tag{background:#fff;border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:.85rem;color:var(--navy-2)}
+
+/* timeline */
+.alt{background:linear-gradient(180deg,#f3f7fc,#fbfcfe)}
+.tl-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.tl-col h3{font-size:1.4rem;margin-bottom:22px;display:flex;align-items:center;gap:10px}
+.tl{position:relative;padding-left:28px}
+.tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--sky-2)}
+.tl-item{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-bottom:18px;transition:box-shadow .2s}
+.tl-item:hover{box-shadow:var(--shadow)}
+.tl-item::before{content:"";position:absolute;left:-28px;top:24px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--navy)}
+.tl-item .when{font-size:.8rem;font-weight:600;color:var(--gold);letter-spacing:.05em}
+.tl-item h4{font-size:1.05rem;color:var(--navy);margin:2px 0 6px}
+.tl-item ul{padding-left:18px;color:var(--muted);font-size:.93rem}
+
+/* featured project */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;background:var(--navy);border-radius:28px;padding:56px;color:#e6eef9;overflow:hidden;position:relative}
+.feature::after{content:"";position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(217,164,65,.25),transparent 70%);right:-120px;bottom:-160px}
+.feature h2{color:#fff;font-size:clamp(1.8rem,3.4vw,2.5rem);margin:10px 0 14px}
+.feature .eyebrow{color:var(--gold)}
+.feature p{color:#c5d4ea;margin-bottom:18px}
+.award-pill{display:flex;gap:10px;align-items:flex-start;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:12px 16px;border-radius:12px;margin-bottom:10px;font-size:.92rem;color:#fff}
+.award-pill i{font-style:normal;color:var(--gold)}
+.feature .btn-primary{background:var(--gold);border-color:var(--gold);color:var(--navy);margin-top:12px}
+.shots{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.shots img{border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.3);background:#fff}
+.shots img:first-child{grid-column:1/-1}
+
+/* materials */
+.mat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.mat{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;text-decoration:none;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+.mat:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.mat .thumb{aspect-ratio:4/3;background:var(--sky);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.mat .thumb img{width:100%;height:100%;object-fit:cover;object-position:top}
+.mat .body{padding:18px 20px}
+.mat h4{color:var(--navy);font-size:1.05rem}
+.mat p{color:var(--muted);font-size:.88rem}
+.mat .go{color:var(--navy-2);font-weight:600;font-size:.85rem;margin-top:6px;display:inline-block}
+
+/* awards */
+.aw-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.aw{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;cursor:zoom-in;transition:transform .25s,box-shadow .25s}
+.aw:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.aw img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.aw div{padding:14px 16px}
+.aw b{display:block;color:var(--navy);font-size:.95rem;line-height:1.35}
+.aw small{color:var(--muted);font-size:.8rem}
+.aw-list{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.aw-list li{list-style:none;background:var(--sky);border-radius:14px;padding:16px 18px;font-size:.92rem;color:var(--navy)}
+.aw-list li b{display:block;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--navy-2);margin-bottom:4px}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;grid-auto-flow:dense;gap:14px}
+.gallery figure{border-radius:16px;overflow:hidden;position:relative;cursor:zoom-in}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gallery figure:hover img{transform:scale(1.06)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:24px 14px 10px;background:linear-gradient(transparent,rgba(11,42,91,.85));color:#fff;font-size:.82rem;opacity:0;transition:opacity .3s}
+.gallery figure:hover figcaption{opacity:1}
+.g-tall{grid-row:span 2}.g-wide{grid-column:span 2}
+.korea-points{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:28px}
+.kp{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+.kp b{font-family:"Playfair Display",serif;color:var(--navy);font-size:1.1rem;display:block;margin-bottom:4px}
+.kp span{color:var(--muted);font-size:.9rem}
+
+/* certs */
+.cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.cert{display:flex;gap:20px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}
+.cert img{width:180px;border-radius:10px;cursor:zoom-in;flex-shrink:0}
+.cert h4{font-family:"Playfair Display",serif;color:var(--navy);font-size:1.6rem}
+.cert p{color:var(--muted);font-size:.92rem}
+
+/* contact */
+.contact{background:var(--navy);color:#fff;text-align:center;padding:96px 0}
+.contact h2{color:#fff;font-size:clamp(2rem,4vw,3rem);margin:10px 0 14px}
+.contact .eyebrow{color:var(--gold)}
+.contact p{color:#c5d4ea;max-width:560px;margin:0 auto 32px}
+.contact-cards{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.cc{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:18px 24px;text-decoration:none;min-width:240px;transition:background .2s}
+.cc:hover{background:rgba(255,255,255,.14)}
+.cc small{display:block;color:var(--gold);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase}
+.cc span{font-weight:500;word-break:break-all}
+.contact .actions{margin-top:32px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.contact .btn{border-color:#fff;color:#fff}
+.contact .btn-primary{background:#fff;color:var(--navy)}
+footer{background:#081f45;color:#8aa0c2;text-align:center;font-size:.82rem;padding:20px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(6,18,40,.92);display:none;align-items:center;justify-content:center;z-index:100;padding:24px;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-height:90vh;max-width:95vw;border-radius:10px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+@media (max-width:960px){
+  .menu{display:none}
+  .hero .wrap,.about-grid,.feature,.tl-grid{grid-template-columns:1fr}
+  .hero .wrap{padding-top:48px;gap:40px}
+  .portrait{max-width:300px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.12)}
+  .mat-grid,.aw-list,.korea-points{grid-template-columns:1fr}
+  .aw-grid{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:160px}
+  .cert-grid{grid-template-columns:1fr}
+  .feature{padding:32px 22px}
+  section{padding:72px 0}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .nav-cta .btn-ghost{display:none}
+  .portrait .badge:not(.badge2){left:-8px}.portrait .badge2{right:-8px}
+  .aw-grid{grid-template-columns:1fr}
+  .cert{flex-direction:column;align-items:flex-start}
+  .cert img{width:100%}
+  .g-wide{grid-column:span 2}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">Vũ Thu Trang<span>.</span></a>
+    <ul class="menu">
+      <li><a href="#about">Giới thiệu</a></li>
+      <li><a href="#journey">Hành trình</a></li>
+      <li><a href="#project">Sản phẩm</a></li>
+      <li><a href="#awards">Thành tích</a></li>
+      <li><a href="#korea">Hàn Quốc</a></li>
+      <li><a href="#contact">Liên hệ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-ghost btn-sm" href="portfolio.html">Portfolio</a>
+      <a class="btn btn-primary btn-sm" href="cv.html">Xem CV</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Teaching Portfolio · 2023 – 2027</span>
+      <h1>Vũ Thu Trang</h1>
+      <div class="role">Sinh viên Giáo dục Tiểu học (Sư phạm Tiếng Anh), Trường Đại học Sư phạm Hà Nội</div>
+      <p class="lead">Mình yêu nghề giáo và muốn tạo ra những giờ học có ý nghĩa cho học sinh tiểu học. Mình hay tổ chức hoạt động học tập tích cực, tự thiết kế học liệu trực quan và đưa công nghệ vào lớp học để các em hứng thú, chủ động hơn.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="cv.html">Xem CV →</a>
+        <a class="btn btn-ghost" href="portfolio.html">Teaching Portfolio</a>
+        <a class="btn btn-ghost" href="#contact">Liên hệ</a>
+      </div>
+    </div>
+    <div class="portrait reveal">
+      <div class="frame"><img src="assets/img/avatar.jpg" alt="Ảnh chân dung Vũ Thu Trang"></div>
+      <div class="badge"><b>3.87</b><small>CPA tích lũy<br>/ 4.0</small></div>
+      <div class="badge badge2"><b>885</b><small>TOEIC<br>L&amp;R</small></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats reveal">
+    <div class="stat"><b>3.87/4</b><span>CPA tích lũy</span></div>
+    <div class="stat"><b>91/100</b><span>Điểm rèn luyện</span></div>
+    <div class="stat"><b>B2</b><span>VSTEP Tiếng Anh</span></div>
+    <div class="stat"><b>3+ năm</b><span>Gia sư tiểu học</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-img reveal"><img src="assets/img/faculty.jpg" alt="Vũ Thu Trang tại Khoa Giáo dục Tiểu học, ĐHSP Hà Nội"></div>
+    <div class="about-text reveal">
+      <span class="eyebrow">01 · Giới thiệu</span>
+      <h2 style="font-size:clamp(2rem,4vw,2.8rem);margin:8px 0 20px">Xin chào, mình là Trang</h2>
+      <p>Mình là sinh viên ngành <b>Giáo dục Tiểu học – Sư phạm Tiếng Anh</b> tại Trường Đại học Sư phạm Hà Nội. Từ năm nhất, mình đã bắt đầu đi dạy, làm nghiên cứu khoa học và trau dồi chuyên môn để chuẩn bị cho nghề.</p>
+      <p>Mình có thể dạy song ngữ Việt – Anh, đã từng tham gia chương trình trao đổi tại <b>Đại học Sư phạm Quốc gia Daegu (Hàn Quốc)</b>, và từng xây dựng tạp chí văn học online cho học sinh tiểu học.</p>
+      <div class="quote">
+        <p>“Giáo dục là vũ khí mạnh nhất mà người ta có thể sử dụng để thay đổi cả thế giới.”</p>
+        <cite>— Nelson Mandela · Triết lí giáo dục của tôi</cite>
+      </div>
+      <div class="tags">
+        <span class="tag">Tổ chức hoạt động học tập</span>
+        <span class="tag">Thiết kế học liệu trực quan</span>
+        <span class="tag">Ứng dụng công nghệ</span>
+        <span class="tag">Dạy học bằng Tiếng Anh</span>
+        <span class="tag">Nghiên cứu khoa học giáo dục</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="journey" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">02 · Hành trình</span><h2>Học tập &amp; Kinh nghiệm</h2></div>
+      <p>Mình học chuyên Văn từ cấp 3, lên đại học theo ngành sư phạm và đi dạy thực tế song song với việc học.</p>
+    </div>
+    <div class="tl-grid">
+      <div class="tl-col reveal">
+        <h3>🎓 Học vấn</h3>
+        <div class="tl">
+          <div class="tl-item">
+            <div class="when">2023 – 2027</div>
+            <h4>Trường Đại học Sư phạm Hà Nội</h4>
+            <ul><li>Giáo dục Tiểu học – Sư phạm Tiếng Anh</li><li>CPA tích lũy 3.87/4 · Điểm rèn luyện 91/100</li><li>Sinh viên xuất sắc năm học 2024–2025, 2025–2026</li></ul>
+          </div>
+          <div class="tl-item">
+            <div class="when">Trao đổi quốc tế</div>
+            <h4>Đại học Sư phạm Quốc gia Daegu, Hàn Quốc</h4>
+            <ul><li>Học tập, dự giờ và giao lưu văn hóa giáo dục Hàn Quốc</li></ul>
+          </div>
+          <div class="tl-item">
+            <div class="when">2020 – 2023</div>
+            <h4>THPT Chuyên Bắc Ninh</h4>
+            <ul><li>Lớp Chuyên Văn 1 – Khóa 28</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="tl-col reveal">
+        <h3>🧑‍🏫 Kinh nghiệm giảng dạy</h3>
+        <div class="tl">
+          <div class="tl-item">
+            <div class="when">2025 – 2026</div>
+            <h4>Trợ giảng · CLB Toán MathExpress</h4>
+            <ul><li>Hỗ trợ giáo viên tổ chức, quản lý lớp học</li><li>Hướng dẫn, giải đáp thắc mắc và hỗ trợ học sinh trong quá trình học</li></ul>
+          </div>
+          <div class="tl-item">
+            <div class="when">2023 – nay</div>
+            <h4>Gia sư Tiểu học</h4>
+            <ul><li>Dạy học sinh lớp 2, 3, 4, 5</li><li>Xây dựng nội dung và phương pháp phù hợp với năng lực từng em</li><li>Củng cố kiến thức, rèn kỹ năng và theo dõi sự tiến bộ của học sinh</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project">
+  <div class="wrap">
+    <div class="feature reveal">
+      <div style="position:relative;z-index:1">
+        <span class="eyebrow">03 · Sản phẩm tiêu biểu</span>
+        <h2>Tạp chí online<br>“Vườn ươm văn học”</h2>
+        <p>Đây là đề tài nghiên cứu khoa học về <b>phát triển năng lực cảm thụ văn học cho học sinh lớp 4, lớp 5</b>. Nhóm xây dựng một tạp chí văn học online, trên đó các em được đọc tác phẩm chọn lọc, học bài và gửi bài dự thi “Cây Bút Nhí”.</p>
+        <div class="award-pill"><i>★</i><span>Giải Nhì Nghiên cứu khoa học cấp Khoa, năm học 2025–2026</span></div>
+        <div class="award-pill"><i>★</i><span>Giải Khuyến khích Nghiên cứu khoa học cấp Trường, năm học 2025–2026</span></div>
+        <a class="btn btn-primary" href="https://vuonuomvanhoc.com/" target="_blank" rel="noopener">Truy cập vuonuomvanhoc.com ↗</a>
+      </div>
+      <div class="shots">
+        <img src="assets/img/vuon-home.jpg" alt="Trang chủ Vườn ươm văn học">
+        <img src="assets/img/vuon-lesson.jpg" alt="Bài học Gặt chữ trên non">
+        <img src="assets/img/vuon-contest.jpg" alt="Cuộc thi Cây Bút Nhí">
+      </div>
+    </div>
+
+    <div class="sec-head reveal" style="margin-top:80px">
+      <div><span class="eyebrow">Học liệu tự thiết kế</span><h2>Kế hoạch bài dạy &amp; học liệu</h2></div>
+      <p>Một số kế hoạch bài dạy, phiếu học tập và tranh minh họa mình đã soạn cho học sinh tiểu học.</p>
+    </div>
+    <div class="mat-grid">
+      <a class="mat reveal" href="https://docs.google.com/document/d/1ZqYZBzXbgrLUthDIjtYjxD2fo6Biax-5xnw0YuQpJ4U/edit?usp=sharing" target="_blank" rel="noopener">
+        <div class="thumb" style="padding:36px"><img src="assets/qr/khbd.svg" alt="QR kế hoạch bài dạy" style="object-fit:contain;width:70%"></div>
+        <div class="body"><h4>Kế hoạch bài dạy</h4><p>Giáo án đầy đủ trên Google Docs</p><span class="go">Mở tài liệu ↗</span></div>
+      </a>
+      <a class="mat reveal" href="https://docs.google.com/document/d/1ZqYZBzXbgrLUthDIjtYjxD2fo6Biax-5xnw0YuQpJ4U/edit?usp=sharing" target="_blank" rel="noopener">
+        <div class="thumb"><img src="assets/img/worksheet.jpg" alt="Phiếu học tập Health Chart Analysis"></div>
+        <div class="body"><h4>Phiếu học tập</h4><p>Health Chart Analysis Worksheet, môn Toán và Khoa học dạy bằng Tiếng Anh</p><span class="go">Xem chi tiết ↗</span></div>
+      </a>
+      <a class="mat reveal" href="https://docs.google.com/document/d/1ZqYZBzXbgrLUthDIjtYjxD2fo6Biax-5xnw0YuQpJ4U/edit?usp=sharing" target="_blank" rel="noopener">
+        <div class="thumb"><img src="assets/img/illustration.jpg" alt="Tranh minh họa nhiệt độ nhà kính" style="object-fit:contain;background:#fff"></div>
+        <div class="body"><h4>Tranh minh họa</h4><p>Biểu đồ trực quan giúp học sinh đọc và phân tích dữ liệu</p><span class="go">Xem chi tiết ↗</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="awards" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">04 · Thành tích</span><h2>Nghiên cứu &amp; Giải thưởng</h2></div>
+      <p>Bấm vào ảnh để xem giấy khen ở kích thước lớn.</p>
+    </div>
+    <div class="aw-grid">
+      <div class="aw reveal"><img src="assets/img/award-nvsp.jpg" alt="Giấy khen Giải Nhất Hiểu biết NVSP"><div><b>Giải Nhất phần thi Hiểu biết NVSP</b><small>Cấp Khoa · 2025–2026</small></div></div>
+      <div class="aw reveal"><img src="assets/img/award-nckh.jpg" alt="Giấy khen Giải Nhì NCKH"><div><b>Giải Nhì Nghiên cứu khoa học</b><small>Cấp Khoa · 2025–2026</small></div></div>
+      <div class="aw reveal"><img src="assets/img/award-cgtl.jpg" alt="Giấy khen Cô giáo tương lai"><div><b>Giải Ba “Cô giáo tương lai – Tài năng duyên dáng”</b><small>Năm 2025</small></div></div>
+      <div class="aw reveal"><img src="assets/img/award-svxs.jpg" alt="Giấy khen Sinh viên xuất sắc"><div><b>Danh hiệu Sinh viên xuất sắc</b><small>2024–2025 · 2025–2026</small></div></div>
+    </div>
+    <ul class="aw-list">
+      <li class="reveal"><b>Nghiên cứu khoa học</b>Giải Khuyến khích NCKH cấp Trường, năm học 2025–2026</li>
+      <li class="reveal"><b>Nghiệp vụ sư phạm</b>Giấy khen thành tích xuất sắc trong hoạt động NVSP, năm học 2024–2025</li>
+      <li class="reveal"><b>Tiếng Anh</b>Giải Khuyến khích HNUE English Challenge 2025</li>
+    </ul>
+    <div class="gallery" style="margin-top:28px">
+      <figure class="g-wide reveal"><img src="assets/img/event-nckh.jpg" alt=""><figcaption>Báo cáo đề tài tại Hội nghị Sinh viên NCKH</figcaption></figure>
+      <figure class="g-tall reveal"><img src="assets/img/event-cgtl.jpg" alt=""><figcaption>Cô giáo tương lai – Tài năng duyên dáng 2025</figcaption></figure>
+      <figure class="g-tall reveal"><img src="assets/img/event-ao-tu-than.jpg" alt=""><figcaption>Hoạt động văn hóa tại trường</figcaption></figure>
+      <figure class="g-wide reveal"><img src="assets/img/teaching-korea.jpg" alt=""><figcaption>Giảng dạy trên lớp</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="korea">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">05 · Trải nghiệm quốc tế</span><h2>Trao đổi tại Daegu, Hàn Quốc</h2></div>
+      <p>Mình học tập và giao lưu tại Đại học Sư phạm Quốc gia Daegu (Daegu National University of Education).</p>
+    </div>
+    <div class="korea-points">
+      <div class="kp reveal"><b>International Exposure</b><span>Học tập, dự giờ và giao lưu với sinh viên sư phạm Hàn Quốc</span></div>
+      <div class="kp reveal"><b>Cultural Exchange</b><span>Tìm hiểu văn hóa và môi trường giáo dục tiểu học Hàn Quốc</span></div>
+      <div class="kp reveal"><b>Professional Growth</b><span>Rèn khả năng thích nghi, giao tiếp và có thêm góc nhìn mới về giáo dục</span></div>
+    </div>
+    <div class="gallery">
+      <figure class="g-wide g-tall reveal"><img src="assets/img/korea-1.jpg" alt=""><figcaption>Giao lưu cùng học sinh Hàn Quốc</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/korea-2.jpg" alt=""><figcaption>Nhận chứng nhận hoàn thành chương trình</figcaption></figure>
+      <figure class="g-tall reveal"><img src="assets/img/korea-3.jpg" alt=""><figcaption>Cùng đoàn sinh viên trao đổi</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/korea-4.jpg" alt=""><figcaption>Buổi làm việc tại trường</figcaption></figure>
+    </div>
+
+    <div class="sec-head reveal" style="margin-top:80px">
+      <div><span class="eyebrow">Lớp học của mình</span><h2>Khoảnh khắc đứng lớp</h2></div>
+      <p>Một vài khoảnh khắc khi đi gia sư và trợ giảng cho học sinh tiểu học.</p>
+    </div>
+    <div class="gallery">
+      <figure class="g-tall reveal"><img src="assets/img/tutor-4.jpg" alt=""><figcaption>Hướng dẫn học sinh làm bài</figcaption></figure>
+      <figure class="g-wide reveal"><img src="assets/img/tutor-3.jpg" alt=""><figcaption>Cùng các bạn nhỏ</figcaption></figure>
+      <figure class="g-tall reveal"><img src="assets/img/tutor-1.jpg" alt=""><figcaption>Giờ học gia sư</figcaption></figure>
+      <figure class="g-wide reveal"><img src="assets/img/tutor-2.jpg" alt=""><figcaption>Học sinh tự luyện tập</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="certs">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">06 · Chứng chỉ</span><h2>Năng lực ngoại ngữ</h2></div>
+    </div>
+    <div class="cert-grid">
+      <div class="cert reveal"><img src="assets/img/cert-vstep.jpg" alt="Chứng chỉ VSTEP B2"><div><h4>VSTEP B2</h4><p>Chứng chỉ năng lực ngoại ngữ Tiếng Anh, Bậc 4 theo Khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam</p></div></div>
+      <div class="cert reveal"><img src="assets/img/cert-toeic.jpg" alt="Chứng chỉ TOEIC 885"><div><h4>TOEIC 885</h4><p>TOEIC Listening &amp; Reading, đạt 885/990 điểm</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Liên hệ</span>
+    <h2>Cùng kết nối nhé!</h2>
+    <p>Mình đang tìm cơ hội thực tập và giảng dạy tại các trường tiểu học, trung tâm giáo dục. Thầy cô và anh chị cần trao đổi gì cứ liên hệ với mình nhé.</p>
+    <div class="contact-cards">
+      <a class="cc" href="mailto:vuthutrang11012005@gmail.com"><small>Email</small><span>vuthutrang11012005@gmail.com</span></a>
+      <a class="cc" href="tel:+84986885214"><small>Điện thoại</small><span>0986 885 214</span></a>
+      <div class="cc"><small>Địa chỉ</small><span>Hà Nội, Việt Nam</span></div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href="cv.html">Xem &amp; tải CV</a>
+      <a class="btn" href="portfolio.html">Teaching Portfolio</a>
+    </div>
+  </div>
+</section>
+<footer>© 2026 Vũ Thu Trang · Giáo dục Tiểu học · Trường Đại học Sư phạm Hà Nội</footer>
+
+<div class="lb" id="lb"><img alt=""></div>
+<script>
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  const lb=document.getElementById('lb'),lbi=lb.querySelector('img');
+  document.querySelectorAll('.aw img,.gallery img,.cert img').forEach(img=>img.addEventListener('click',()=>{lbi.src=img.src;lb.classList.add('open')}));
+  lb.addEventListener('click',()=>lb.classList.remove('open'));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+</script>
+</body>
+</html>

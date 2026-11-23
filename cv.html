@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV · Vũ Thu Trang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b2a5b;--navy-2:#163d7a;--ink:#1f2937;--muted:#5b6678;--sky:#e8f0fa;--line:#d6e0ec;--gold:#c9952f}
+*{box-sizing:border-box;margin:0;padding:0}
+@page{size:A4;margin:0}
+html,body{background:#d9dee6}
+body{font-family:"Be Vietnam Pro",sans-serif;color:var(--ink);font-size:9.6pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.toolbar{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:10px;padding:12px 16px;background:#0b2a5b}
+.toolbar a,.toolbar button{font:600 13px "Be Vietnam Pro",sans-serif;padding:8px 16px;border-radius:999px;border:1.5px solid #fff;background:transparent;color:#fff;text-decoration:none;cursor:pointer}
+.toolbar .pri{background:#fff;color:#0b2a5b}
+.page{width:210mm;height:297mm;margin:24px auto;background:#fff;display:grid;grid-template-columns:70mm 1fr;box-shadow:0 10px 40px rgba(0,0,0,.18);overflow:hidden}
+@media screen and (max-width:820px){
+  .viewport{overflow-x:auto;padding:0 16px}
+  .page{margin:16px auto}
+}
+
+/* sidebar */
+aside{background:var(--navy);color:#dfe8f5;padding:12mm 7mm 10mm 8mm;display:flex;flex-direction:column;gap:5.5mm}
+.photo{width:40mm;height:40mm;border-radius:50%;overflow:hidden;border:2.2mm solid rgba(255,255,255,.12);margin:0 auto 1mm;background:#fff}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center 18%}
+aside h3{font:600 8.2pt "Be Vietnam Pro";letter-spacing:.2em;text-transform:uppercase;color:var(--gold);padding-bottom:1.6mm;border-bottom:1px solid rgba(255,255,255,.18);margin-bottom:2.4mm}
+.contact div{display:flex;gap:2.5mm;align-items:flex-start;margin-bottom:1.6mm;font-size:8.6pt;overflow-wrap:anywhere}
+.contact svg{width:3.6mm;height:3.6mm;flex-shrink:0;margin-top:.5mm;fill:none;stroke:var(--gold);stroke-width:2}
+.edu{margin-bottom:2.8mm}
+.edu b{display:block;color:#fff;font-size:9.2pt;line-height:1.35}
+.edu .yr{font-size:7.8pt;color:var(--gold);font-weight:600;letter-spacing:.04em}
+.edu ul{list-style:none;font-size:8.4pt;margin-top:.8mm}
+.edu li{padding-left:3mm;position:relative}
+.edu li::before{content:"";position:absolute;left:0;top:2.1mm;width:1.2mm;height:1.2mm;border-radius:50%;background:var(--gold)}
+.kpi{display:grid;grid-template-columns:1fr 1fr;gap:2mm}
+.kpi div{background:rgba(255,255,255,.08);border-radius:2mm;padding:2mm;text-align:center}
+.kpi b{display:block;font:700 13pt "Playfair Display";color:#fff;line-height:1.2}
+.kpi span{font-size:7.2pt;color:#b8c8e0}
+.skills{list-style:none;font-size:8.5pt}
+.skills li{padding-left:3mm;position:relative;margin-bottom:.6mm}
+.skills li::before{content:"";position:absolute;left:0;top:2.1mm;width:1.2mm;height:1.2mm;border-radius:50%;background:var(--gold)}
+.qr{margin-top:auto;display:flex;gap:3mm;align-items:center;background:#fff;border-radius:2.5mm;padding:2.4mm;color:var(--navy)}
+.qr img{width:17mm;height:17mm}
+.qr small{font-size:7.4pt;line-height:1.35;color:var(--muted)}
+.qr b{display:block;font-size:8.4pt;color:var(--navy)}
+
+/* main */
+main{padding:12mm 10mm 10mm 9mm;display:flex;flex-direction:column}
+header .eyebrow{font-size:8pt;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600}
+header h1{font:700 27pt "Playfair Display";color:var(--navy);line-height:1.1;margin:1mm 0 1.2mm;letter-spacing:.01em}
+header .role{font-size:10.4pt;font-weight:500;color:var(--navy-2)}
+.summary{margin-top:4mm;padding:3.2mm 4mm;background:var(--sky);border-left:1mm solid var(--navy);border-radius:0 2mm 2mm 0;font-size:9.1pt;color:#334155}
+section{margin-top:6.4mm}
+section h2{display:flex;align-items:center;gap:3mm;font:600 9pt "Be Vietnam Pro";letter-spacing:.2em;text-transform:uppercase;color:var(--navy);margin-bottom:2.8mm}
+section h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.job{position:relative;padding-left:5mm;margin-bottom:3.2mm}
+.job::before{content:"";position:absolute;left:0;top:1.3mm;width:2.2mm;height:2.2mm;border-radius:50%;border:.6mm solid var(--navy);background:#fff}
+.job::after{content:"";position:absolute;left:1.05mm;top:4.2mm;bottom:-3mm;width:.3mm;background:var(--line)}
+.job:last-child::after{display:none}
+.job-head{display:flex;justify-content:space-between;gap:3mm;align-items:baseline}
+.job-head b{font-size:10pt;color:var(--navy)}
+.job-head span{font-size:8.2pt;color:var(--gold);font-weight:600;white-space:nowrap}
+.job .org{font-size:8.8pt;color:var(--muted);font-style:italic;margin-bottom:.6mm}
+ul.dots{list-style:none}
+ul.dots li{padding-left:3.4mm;position:relative;margin-bottom:.4mm}
+ul.dots li::before{content:"";position:absolute;left:0;top:2.15mm;width:1.3mm;height:.3mm;background:var(--navy-2)}
+.ach-group{margin-bottom:2.6mm}
+.ach-group h4{font-size:8.6pt;font-weight:600;color:var(--navy-2);margin-bottom:.8mm;text-transform:uppercase;letter-spacing:.06em}
+.ach{display:flex;gap:2.6mm;align-items:flex-start;margin-bottom:1.3mm}
+.ach i{flex-shrink:0;font-style:normal;font-weight:700;font-size:7.4pt;color:#fff;background:var(--navy);border-radius:1mm;padding:.2mm 1.6mm;margin-top:.4mm;width:17mm;white-space:nowrap;text-align:center}
+.ach i.g{background:var(--gold)}
+.ach em{display:block;font-size:8.4pt;color:var(--muted)}
+.project{border:1px solid var(--line);border-radius:2.5mm;padding:3mm 4mm;display:flex;gap:4mm;align-items:center}
+.project img{width:15mm;height:15mm;flex-shrink:0}
+.project b{color:var(--navy);font-size:9.6pt}
+.project p{font-size:8.6pt;color:var(--muted)}
+.project a{color:var(--navy-2);font-weight:600;text-decoration:none}
+@media print{
+  html,body{background:#fff}
+  .toolbar{display:none}
+  .page{margin:0;box-shadow:none}
+}
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <a href="index.html">← Trang chủ</a>
+  <button class="pri" onclick="window.print()">Tải PDF / In CV</button>
+</div>
+<div class="viewport">
+<div class="page">
+  <aside>
+    <div class="photo"><img src="assets/img/avatar.jpg" alt="Vũ Thu Trang"></div>
+
+    <div>
+      <h3>Liên hệ</h3>
+      <div class="contact">
+        <div><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>0986 885 214</div>
+        <div><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>vuthutrang11012005@gmail.com</div>
+        <div><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Hà Nội</div>
+        <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg><span style="font-size:7.9pt">vuthutranghnue.github.io/<wbr>vuthutrang</span></div>
+      </div>
+    </div>
+
+    <div>
+      <h3>Học vấn</h3>
+      <div class="edu">
+        <span class="yr">2023 – 2027</span>
+        <b>Trường Đại học Sư phạm Hà Nội</b>
+        <ul><li>Giáo dục Tiểu học – Sư phạm Tiếng Anh</li><li>Sinh viên trao đổi tại ĐH Sư phạm Quốc gia Daegu, Hàn Quốc</li></ul>
+      </div>
+      <div class="kpi">
+        <div><b>3.87</b><span>CPA / 4.0</span></div>
+        <div><b>91</b><span>Rèn luyện / 100</span></div>
+      </div>
+      <div class="edu" style="margin-top:2.8mm;margin-bottom:0">
+        <span class="yr">2020 – 2023</span>
+        <b>THPT Chuyên Bắc Ninh</b>
+        <ul><li>Lớp Chuyên Văn 1 – Khóa 28</li></ul>
+      </div>
+    </div>
+
+    <div>
+      <h3>Chứng chỉ</h3>
+      <div class="kpi">
+        <div><b>B2</b><span>VSTEP Tiếng Anh</span></div>
+        <div><b>885</b><span>TOEIC L&amp;R</span></div>
+      </div>
+    </div>
+
+    <div>
+      <h3>Kỹ năng</h3>
+      <ul class="skills">
+        <li>Tổ chức hoạt động học tập tích cực</li>
+        <li>Thiết kế KHBD, phiếu học tập, học liệu trực quan</li>
+        <li>Dạy học Toán, Khoa học bằng Tiếng Anh</li>
+        <li>Ứng dụng công nghệ, xây dựng học liệu số</li>
+        <li>Quản lý lớp học, theo dõi tiến bộ học sinh</li>
+      </ul>
+    </div>
+
+    <div class="qr">
+      <img src="assets/qr/site.svg" alt="QR Portfolio">
+      <div><b>Teaching Portfolio</b><small>Quét mã để xem sản phẩm, học liệu &amp; giấy khen</small></div>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <div class="eyebrow">Curriculum Vitae</div>
+      <h1>VŨ THU TRANG</h1>
+      <div class="role">Ứng tuyển: Thực tập sinh / Giáo viên Tiểu học</div>
+    </header>
+
+    <div class="summary">
+      Sinh viên năm cuối ngành Giáo dục Tiểu học (Sư phạm Tiếng Anh) tại Trường Đại học Sư phạm Hà Nội, <b>CPA 3.87/4</b>, đã có hơn 3 năm dạy học sinh tiểu học. Có thế mạnh về tổ chức hoạt động học tập, thiết kế học liệu và nghiên cứu khoa học giáo dục, từng đạt <b>giải NCKH cấp Khoa và cấp Trường</b>. Mong muốn được phát triển nghề nghiệp trong một môi trường giáo dục hiện đại, năng động.
+    </div>
+
+    <section>
+      <h2>Kinh nghiệm</h2>
+      <div class="job">
+        <div class="job-head"><b>Trợ giảng</b><span>2025 – 2026</span></div>
+        <div class="org">CLB Toán MathExpress</div>
+        <ul class="dots">
+          <li>Hỗ trợ giáo viên tổ chức và quản lý lớp học.</li>
+          <li>Hướng dẫn, giải đáp thắc mắc và hỗ trợ học sinh trong quá trình học.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><b>Gia sư Tiểu học</b><span>2023 – 2026</span></div>
+        <div class="org">Học sinh lớp 2, 3, 4, 5</div>
+        <ul class="dots">
+          <li>Xây dựng nội dung và phương pháp học phù hợp với năng lực từng học sinh.</li>
+          <li>Củng cố kiến thức, rèn kỹ năng và theo dõi sự tiến bộ của học sinh.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Dự án tiêu biểu</h2>
+      <div class="project">
+        <img src="assets/qr/vuon.svg" alt="QR Vườn ươm văn học">
+        <div>
+          <b>Tạp chí online “Vườn ươm văn học”</b>
+          <p>Đề tài NCKH: Phát triển năng lực cảm thụ văn học cho học sinh lớp 4, lớp 5 thông qua xây dựng tạp chí online. <a href="https://vuonuomvanhoc.com/">vuonuomvanhoc.com</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Thành tích nổi bật</h2>
+      <div class="ach-group">
+        <h4>Nghiên cứu khoa học</h4>
+        <div class="ach"><i class="g">Giải Nhì</i><span>NCKH cấp Khoa, năm học 2025–2026</span></div>
+        <div class="ach"><i>Giải KK</i><span>NCKH cấp Trường, năm học 2025–2026</span></div>
+      </div>
+      <div class="ach-group">
+        <h4>Nghiệp vụ sư phạm</h4>
+        <div class="ach"><i class="g">Giải Nhất</i><span>Phần thi Hiểu biết NVSP cấp Khoa, năm học 2025–2026</span></div>
+        <div class="ach"><i>Giải Ba</i><span>Cuộc thi “Cô giáo tương lai – Tài năng duyên dáng” 2025</span></div>
+        <div class="ach"><i>Giấy khen</i><span>Thành tích xuất sắc trong hoạt động NVSP, năm học 2024–2025</span></div>
+      </div>
+      <div class="ach-group" style="margin-bottom:0">
+        <h4>Học tập &amp; hoạt động</h4>
+        <div class="ach"><i class="g">SVXS</i><span>Sinh viên xuất sắc, năm học 2024–2025 và 2025–2026</span></div>
+        <div class="ach"><i>Giải KK</i><span>HNUE English Challenge 2025</span></div>
+      </div>
+    </section>
+  </main>
+</div>
+</div>
+</body>
+</html>
