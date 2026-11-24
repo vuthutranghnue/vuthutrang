@@ -6,7 +6,7 @@
 <title>Vũ Thu Trang · Giáo dục Tiểu học</title>
 <meta name="description" content="Vũ Thu Trang – sinh viên Giáo dục Tiểu học (Sư phạm Tiếng Anh), Trường Đại học Sư phạm Hà Nội. Hồ sơ giảng dạy, nghiên cứu và thành tích.">
 <meta property="og:title" content="Vũ Thu Trang · Teaching Portfolio">
-<meta property="og:description" content="Sinh viên Giáo dục Tiểu học – ĐH Sư phạm Hà Nội · CPA 3.87/4 · TOEIC 885">
+<meta property="og:description" content="Sinh viên Giáo dục Tiểu học – ĐH Sư phạm Hà Nội · CPA 3.87/4 · TOEIC 885 · IELTS 6.5">
 <meta property="og:image" content="https://vuthutranghnue.github.io/vuthutrang/assets/img/faculty.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b2a5b'/><text x='32' y='43' font-family='Georgia' font-size='30' fill='white' text-anchor='middle'>VT</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -202,12 +202,17 @@ section{padding:110px 0;position:relative}
 .kp span{color:var(--muted);font-size:.9rem;position:relative;display:block}
 
 /* certs */
-.cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.cert{display:flex;gap:22px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px}
-.cert .frame{width:200px;flex-shrink:0;background:#f6f3ea;border-radius:12px;padding:10px;cursor:zoom-in}
-.cert .frame img{border-radius:4px}
-.cert h4{font-family:"Playfair Display",serif;color:var(--navy);font-size:2rem;line-height:1.1}
-.cert p{color:var(--muted);font-size:.92rem;margin-top:6px}
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cert{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:22px;padding:14px;transition:transform .3s,box-shadow .3s}
+.cert:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.cert .frame{height:260px;background:#f6f3ea;border-radius:14px;padding:12px;cursor:zoom-in;display:flex;align-items:center;justify-content:center}
+.cert .frame img{max-height:100%;max-width:100%;object-fit:contain;border-radius:4px;box-shadow:0 6px 16px rgba(0,0,0,.12)}
+.cert .txt{padding:14px 6px 4px}
+.cert h4{font-family:"Playfair Display",serif;color:var(--navy);font-size:1.9rem;line-height:1.1}
+.cert .lvl{display:inline-block;margin-left:8px;font:700 .72rem "Be Vietnam Pro";color:#fff;background:var(--gold);padding:3px 9px;border-radius:999px;vertical-align:middle;letter-spacing:.06em}
+.cert p{color:var(--muted);font-size:.9rem;margin-top:6px}
+.bands{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.bands span{font-size:.78rem;background:var(--sky);color:var(--navy);padding:4px 10px;border-radius:999px;font-weight:500}
 
 /* contact */
 .contact{background:var(--navy);color:#fff;text-align:center;padding:110px 0;position:relative;overflow:hidden}
@@ -268,8 +273,6 @@ footer{background:#081f45;color:#8aa0c2;text-align:center;font-size:.82rem;paddi
   .polaroid span{font-size:.95rem;white-space:nowrap}
   .doodle.spin-slow{left:6px!important;top:-6px!important;width:46px;height:46px}
   .aw-grid{grid-template-columns:1fr}
-  .cert{flex-direction:column;align-items:flex-start}
-  .cert .frame{width:100%}
   .mini-facts{gap:18px}
   .masonry{columns:2 140px;column-gap:10px}
   .masonry figure{margin-bottom:10px;border-radius:12px}
@@ -330,8 +333,8 @@ footer{background:#081f45;color:#8aa0c2;text-align:center;font-size:.82rem;paddi
 
 <div class="marquee" aria-hidden="true">
   <div class="track">
-    <span>Sinh viên xuất sắc 2024–2025 &amp; 2025–2026</span><span>Giải Nhất Hiểu biết NVSP cấp Khoa</span><span>Giải Nhì NCKH cấp Khoa</span><span>Giải Ba Cô giáo tương lai 2025</span><span>VSTEP B2 · TOEIC 885</span><span>Sinh viên trao đổi tại Daegu, Hàn Quốc</span>
-    <span>Sinh viên xuất sắc 2024–2025 &amp; 2025–2026</span><span>Giải Nhất Hiểu biết NVSP cấp Khoa</span><span>Giải Nhì NCKH cấp Khoa</span><span>Giải Ba Cô giáo tương lai 2025</span><span>VSTEP B2 · TOEIC 885</span><span>Sinh viên trao đổi tại Daegu, Hàn Quốc</span>
+    <span>Sinh viên xuất sắc 2024–2025 &amp; 2025–2026</span><span>Giải Nhất Hiểu biết NVSP cấp Khoa</span><span>Giải Nhì NCKH cấp Khoa</span><span>Giải Ba Cô giáo tương lai 2025</span><span>IELTS 6.5 · TOEIC 885 · VSTEP B2</span><span>Sinh viên trao đổi tại Daegu, Hàn Quốc</span>
+    <span>Sinh viên xuất sắc 2024–2025 &amp; 2025–2026</span><span>Giải Nhất Hiểu biết NVSP cấp Khoa</span><span>Giải Nhì NCKH cấp Khoa</span><span>Giải Ba Cô giáo tương lai 2025</span><span>IELTS 6.5 · TOEIC 885 · VSTEP B2</span><span>Sinh viên trao đổi tại Daegu, Hàn Quốc</span>
   </div>
 </div>
 
@@ -391,7 +394,7 @@ footer{background:#081f45;color:#8aa0c2;text-align:center;font-size:.82rem;paddi
         <div class="tl">
           <div class="tl-item"><span class="when">2025 – 2026</span><h4>Trợ giảng · CLB Toán MathExpress</h4><ul><li>Hỗ trợ giáo viên tổ chức, quản lý lớp học</li><li>Hướng dẫn, giải đáp thắc mắc cho học sinh</li></ul></div>
           <div class="tl-item"><span class="when">2023 – nay</span><h4>Gia sư Tiểu học · Lớp 2 – 5</h4><ul><li>Xây dựng nội dung, phương pháp phù hợp từng em</li><li>Củng cố kiến thức, rèn kỹ năng, theo dõi sự tiến bộ</li></ul></div>
-          <div class="tl-item"><span class="when">Ngoại ngữ</span><h4>VSTEP B2 · TOEIC 885</h4><ul><li>Dạy được các môn Toán, Khoa học bằng Tiếng Anh</li></ul></div>
+          <div class="tl-item"><span class="when">Ngoại ngữ</span><h4>IELTS 6.5 · TOEIC 885 · VSTEP B2</h4><ul><li>Dạy được các môn Toán, Khoa học bằng Tiếng Anh</li></ul></div>
         </div>
       </div>
     </div>
@@ -461,8 +464,9 @@ footer{background:#081f45;color:#8aa0c2;text-align:center;font-size:.82rem;paddi
     </ul>
 
     <div class="cert-grid" style="margin-top:40px">
-      <div class="cert reveal"><div class="frame"><img src="assets/img/cert-vstep.jpg" alt="Chứng chỉ VSTEP B2"></div><div><h4>VSTEP B2</h4><p>Chứng chỉ Tiếng Anh Bậc 4 theo Khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam</p></div></div>
-      <div class="cert reveal"><div class="frame"><img src="assets/img/cert-toeic.jpg" alt="Chứng chỉ TOEIC 885"></div><div><h4>TOEIC 885</h4><p>TOEIC Listening &amp; Reading, 885/990 điểm</p></div></div>
+      <div class="cert reveal"><div class="frame"><img src="assets/img/cert-toeic.jpg" alt="Chứng chỉ TOEIC 885"></div><div class="txt"><h4>TOEIC 885</h4><p>TOEIC Listening &amp; Reading, đạt 885/990. Thi ngày 01/08/2026, có hiệu lực đến 08/2028.</p><div class="bands"><span>Listening 475</span><span>Reading 410</span></div></div></div>
+      <div class="cert reveal"><div class="frame"><img src="assets/img/cert-ielts.jpg" alt="Chứng chỉ IELTS Academic 6.5"></div><div class="txt"><h4>IELTS 6.5<span class="lvl">B2</span></h4><p>IELTS Academic, Overall Band 6.5 (CEFR B2). Thi tháng 03/2023.</p><div class="bands"><span>L 6.0</span><span>R 7.0</span><span>W 6.5</span><span>S 5.5</span></div></div></div>
+      <div class="cert reveal"><div class="frame"><img src="assets/img/cert-vstep.jpg" alt="Chứng chỉ VSTEP Bậc 4"></div><div class="txt"><h4>VSTEP 7.0<span class="lvl">B2</span></h4><p>Chứng chỉ Tiếng Anh Bậc 4 theo Khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam, do ĐH Ngoại ngữ – ĐHQGHN cấp. Thi tháng 03/2026.</p><div class="bands"><span>Nghe 6.5</span><span>Đọc 8.0</span><span>Nói 6.5</span><span>Viết 6.5</span></div></div></div>
     </div>
   </div>
 </section>

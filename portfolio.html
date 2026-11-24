@@ -127,10 +127,12 @@ img{display:block}
 .ev-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:1.4cqw;height:30cqw}
 
 /* certs */
-.cert-row{display:grid;grid-template-columns:1fr 1fr;gap:3cqw}
-.cert .ph{height:20cqw}
-.cert .ph img{object-fit:contain;background:#fff}
-.cert b{display:block;font:700 2.6cqw "Playfair Display";color:var(--navy);margin-top:1.4cqw}
+.cert-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4cqw}
+.cert .ph{height:21cqw;background:#f6f3ea!important;padding:.8cqw}
+.cert .ph img{object-fit:contain;background:transparent}
+.cert b{display:block;font:700 2.3cqw "Playfair Display";color:var(--navy);margin-top:1.2cqw}
+.cert .bd{display:flex;gap:.5cqw;flex-wrap:wrap;margin-top:.7cqw}
+.cert .bd i{font-style:normal;font-size:.9cqw;background:#fff;color:var(--navy);padding:.25cqw .8cqw;border-radius:5cqw;font-weight:600}
 .cert span{font-size:1.1cqw;color:var(--muted)}
 
 /* thanks */
@@ -399,8 +401,9 @@ body.present .pbar{display:block}
     <div class="eyebrow">10 · Chứng chỉ</div>
     <h2>Năng lực ngoại ngữ</h2>
     <div class="cert-row">
-      <div class="cert"><div class="ph"><img src="assets/img/cert-vstep.jpg" alt=""></div><b>VSTEP B2</b><span>Chứng chỉ Tiếng Anh Bậc 4 theo Khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam</span></div>
-      <div class="cert"><div class="ph"><img src="assets/img/cert-toeic.jpg" alt=""></div><b>TOEIC 885</b><span>TOEIC Listening &amp; Reading, 885/990 điểm</span></div>
+      <div class="cert"><div class="ph"><img src="assets/img/cert-toeic.jpg" alt=""></div><b>TOEIC 885</b><span>Listening &amp; Reading · thi 08/2026, hiệu lực đến 08/2028</span><div class="bd"><i>Listening 475</i><i>Reading 410</i></div></div>
+      <div class="cert"><div class="ph"><img src="assets/img/cert-ielts.jpg" alt=""></div><b>IELTS 6.5 · B2</b><span>IELTS Academic · thi 03/2023</span><div class="bd"><i>L 6.0</i><i>R 7.0</i><i>W 6.5</i><i>S 5.5</i></div></div>
+      <div class="cert"><div class="ph"><img src="assets/img/cert-vstep.jpg" alt=""></div><b>VSTEP 7.0 · B2</b><span>Bậc 4, Khung NLNN 6 bậc · ĐHNN – ĐHQGHN · 03/2026</span><div class="bd"><i>Nghe 6.5</i><i>Đọc 8.0</i><i>Nói 6.5</i><i>Viết 6.5</i></div></div>
     </div>
   </div>
 </section>
